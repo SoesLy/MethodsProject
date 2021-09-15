@@ -52,6 +52,7 @@ public class MethodsProject {
     }
 
 
+
     //Task 1 Method
     /*public static int lowest(int numb1, int numb2, int numb3) {
         return Math.min(Math.min(numb1, numb2), numb3);
