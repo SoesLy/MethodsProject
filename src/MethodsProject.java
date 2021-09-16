@@ -107,6 +107,7 @@ public class MethodsProject {
 
     //Task 5 Method
     public static boolean isPasswordValid(String password) {
+
         if (password.length() < 8) {
             return false;
         }
@@ -118,7 +119,18 @@ public class MethodsProject {
                     if (Character.isLetterOrDigit(password.charAt(i))) {
 
                     }
-                    if ()
+                    if (password.contains("secret")) {
+                        return false;
+                    } else {
+
+                    }
+                    if (password.charAt(0) == '-') {
+                        return false;
+
+                    } else {
+
+                    }
+
                 }
 
 
