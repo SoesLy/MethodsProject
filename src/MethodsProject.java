@@ -1,4 +1,3 @@
-import java.lang.module.FindException;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -162,12 +161,14 @@ public class MethodsProject {
     //Task 6 Method //
     public static int printNumbers(int maximum) {
         for (int i = 1; i <= maximum; i++) {
-            System.out.println("[");
-            System.out.println(i);
-            System.out.println("]");
+            String square = "[";
+            int number = i;
+            String square2 = "]";
+
+
 
         }
-        return ;
+        return 67;
     }
 
 }
