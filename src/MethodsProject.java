@@ -1,4 +1,5 @@
 import java.lang.module.FindException;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class MethodsProject {
@@ -108,6 +109,8 @@ public class MethodsProject {
     //Task 5 Method
     public static boolean isPasswordValid(String password) {
 
+        password = password.toLowerCase();
+
         if (password.length() < 8) {
             return false;
         }
@@ -119,22 +122,19 @@ public class MethodsProject {
                     if (Character.isLetterOrDigit(password.charAt(i))) {
 
                     }
-                    if (password.contains("secret")) {
-                        return false;
-                    } else {
-
-                    }
-                    if (password.charAt(0) == '-') {
-                        return false;
-
-                    } else {
-
-                    }
 
                 }
 
-
             }
+
+        if (password.contains("secret")) {
+            return false;
+        }
+
+        if (password.charAt(0) == '-') {
+            return false;
+
+        }
         return true;
     }
 }
