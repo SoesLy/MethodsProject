@@ -63,26 +63,27 @@ public class MethodsProject {
          */
 
         //Task 6//
-
+        /*
         System.out.println("Hello yet again 😁");
         System.out.println("How much do you want me to count to?");
         int maximum = scanner.nextInt();
 
         System.out.println("Okay, ready for count up 😁");
         System.out.println(printNumbers(maximum));
+         */
 
 
     }
 
 
-    //Task 1 Method
+    //Task 1 Method//
     /*
     public static int lowest(int numb1, int numb2, int numb3) {
         return Math.min(Math.min(numb1, numb2), numb3);
     }
      */
 
-    //Task 2 Method
+    //Task 2 Method//
     /*
     public static int isNumberPositive(int positiveNegativeOrZero) {
 
@@ -98,7 +99,7 @@ public class MethodsProject {
 }
      */
 
-    //Task 3 Method
+    //Task 3 Method//
     /*
     public static String whatIsMiddleChar(String word) {
         int length = word.length();
@@ -111,7 +112,7 @@ public class MethodsProject {
      */
 
 
-    //Task 4 Method
+    //Task 4 Method//
     /*
     public static double area(double side1, double side2, double side3) {
         double areal = 0;
@@ -123,7 +124,7 @@ public class MethodsProject {
      */
 
 
-    //Task 5 Method
+    //Task 5 Method//
     /*
    public static boolean isPasswordValid(String password) {
 
@@ -159,6 +160,7 @@ public class MethodsProject {
 
 
     //Task 6 Method //
+    /*
     public static int printNumbers(int maximum) {
         for (int i = 1; i <= maximum; i++) {
             String square = "[";
@@ -166,10 +168,11 @@ public class MethodsProject {
             String square2 = "]";
 
 
-
         }
         return 67;
+
     }
+     */
 
 }
 
