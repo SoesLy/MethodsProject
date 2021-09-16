@@ -1,3 +1,4 @@
+import java.lang.module.FindException;
 import java.util.Scanner;
 
 public class MethodsProject {
@@ -25,12 +26,13 @@ public class MethodsProject {
          */
 
         //Task 3
-        System.out.println("Hello 😁");
+        /*System.out.println("Hello 😁");
         System.out.println("What is your favorite word? 😊");
         String word = scanner.nextLine();
 
         System.out.println("The middle letter in your favorite word is:...");
         System.out.println(whatIsMiddleChar(word));
+         */
 
 
         //Task 4
@@ -47,10 +49,17 @@ public class MethodsProject {
 
 
         //Task 5
+        System.out.println("Please write your password");
+        String password = scanner.nextLine();
+
+        if (isPasswordValid(password)) {
+            System.out.println("Congraz, your password is valid!");
+        } else {
+            System.out.println("You shall NOT PASS!");
+        }
 
 
     }
-
 
 
     //Task 1 Method
@@ -74,14 +83,15 @@ public class MethodsProject {
      */
 
     //Task 3 Method
-    public static String whatIsMiddleChar(String word) {
+    /*public static String whatIsMiddleChar(String word) {
         int length = word.length();
         int middle = length / 2;
         System.out.println(word.charAt(middle));
 
 
         return "";
-    }
+         }
+     */
 
 
     //Task 4 Method
@@ -96,7 +106,24 @@ public class MethodsProject {
 
 
     //Task 5 Method
+    public static boolean isPasswordValid(String password) {
+        if (password.length() < 8) {
+            return false;
+        }
 
+            for (int i = 0; i < password.length(); i++) {
+                if (!Character.isLetterOrDigit(password.charAt(i))) {
+                    return false;
+                } else {
+                    if (Character.isLetterOrDigit(password.charAt(i))) {
+
+                    }
+                    if ()
+                }
+
+
+            }
+        return true;
+    }
 }
-
 
